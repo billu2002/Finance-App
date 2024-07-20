@@ -69,3 +69,20 @@ To set up the project locally:
   - **Errors are logged in real-time with Sentry.**
   - **Access the Sentry dashboard for detailed reports.**
 
+
+## Contributing
+- **We welcome contributions! To contribute**: 
+  1.  **Fork the repository.**
+  2.  **Create a new branch**:
+       ```sh
+       git checkout -b feature/your-feature-name
+  3.  **Commit your changes**:
+       ```sh
+       git commit -m "Add your message"
+  4.  **Push your branch**:
+      ```sh
+      git push origin feature/your-feature-name
+  5.  **Submit a pull request**.
+
+## License
+This project is licensed under the MIT License.
