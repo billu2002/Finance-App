@@ -1,36 +1,86 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Horizon Banking App
 
-## Getting Started
+Welcome to the Horizon Banking App! This web application enables users to securely link their bank accounts using Plaid and transfer money using Dwolla. Built with modern technologies, the app provides a sleek and responsive user experience.
 
-First, run the development server:
+## Table of Contents
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- [Features](#features)
+- [Tech Stack](#tech-stack)
+- [Design](#design)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Features
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Bank Account Linking**: Users can link their bank accounts securely with Plaid.
+- **Money Transfers**: Users can transfer money effortlessly using Dwolla.
+- **Real-time Error Monitoring**: Errors are logged in real-time using Sentry.
+- **Responsive Design**: The application features a clean, responsive design built with Tailwind CSS.
+- **Modern Frontend**: Developed using Next.js 14 for optimal performance and user experience.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Tech Stack
 
-## Learn More
+- **Frontend**: 
+  - **Framework**: [Next.js 14](https://nextjs.org/)
+  - **Styling**: [Tailwind CSS](https://tailwindcss.com/)
 
-To learn more about Next.js, take a look at the following resources:
+- **Backend**: 
+  - **Service**: [Appwrite.io](https://appwrite.io/)
+  - **Error Logging**: [Sentry](https://sentry.io/)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Bank Account Linking**: [Plaid](https://plaid.com/)
+- **Money Transfers**: [Dwolla](https://www.dwolla.com/)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Design
 
-## Deploy on Vercel
+Explore the Figma design for the Horizon Banking App [here](https://www.figma.com/design/ppm3ylNgu7CWuc1Z5r3Iap/Horizon-Banking-App?node-id=10-5409&t=4fPrLEXbeHd0ZDzd-1).
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Installation
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+To set up the project locally:
+
+1. **Clone the repository**:
+   ```sh
+   git clone https://github.com/yourusername/horizon-banking-app.git
+   cd horizon-banking-app
+2. **Install dependencies**:
+  ```sh
+    npm install
+3. **Set up environment variables**:
+  ```sh
+    Create a .env file in the root directory and add the required environment variables. Refer to .env.example for details.
+4. **Start the development server**:
+  ```sh
+    npm run dev
+
+
+## Usage
+ 
+- **Link the bank account**: 
+  - **Navigate to the Link Bank Account section.**
+  - **Follow the instructions to link your bank account via Plaid.**
+
+- **Transfer Money**: 
+  - **Go to the Transfer Money section.**
+  - **Enter the details to transfer money using Dwolla.**
+
+- **Monitor Errors**: 
+  - **Errors are logged in real-time with Sentry.**
+  - **Access the Sentry dashboard for detailed reports.**
+
+## Contributing
+- ***We welcome contributions! To contribute*: 
+  - **Fork the repository.**
+  - **Create a new branch**: 
+  ```sh
+    git checkout -b feature/your-feature-name
+  - **Commit your changes**: 
+  ```sh
+    git commit -m "Add your message"
+  - **Push your branch**: 
+  ```sh
+    git push origin feature/your-feature-name
+  - **Submit a pull request.** 
+
