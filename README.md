@@ -2,6 +2,9 @@
 
 Welcome to the Horizon Banking App! This web application enables users to securely link their bank accounts using Plaid and transfer money using Dwolla. Built with modern technologies, the app provides a sleek and responsive user experience.
 
+![Horizon Dashboard](./screenshots/Dashboard.png)
+![Login](./screenshots/Login.png)
+
 ## Table of Contents
 
 - [Features](#features)
@@ -22,11 +25,13 @@ Welcome to the Horizon Banking App! This web application enables users to secure
 
 ## Tech Stack
 
-- **Frontend**: 
+- **Frontend**:
+
   - **Framework**: [Next.js 14](https://nextjs.org/)
   - **Styling**: [Tailwind CSS](https://tailwindcss.com/)
 
-- **Backend**: 
+- **Backend**:
+
   - **Service**: [Appwrite.io](https://appwrite.io/)
   - **Error Logging**: [Sentry](https://sentry.io/)
 
@@ -45,44 +50,54 @@ To set up the project locally:
    ```sh
    git clone https://github.com/yourusername/horizon-banking-app.git
    cd horizon-banking-app
+   ```
 2. **Install dependencies**:
    ```sh
    npm install
+   ```
 3. **Set up environment variables**:
 
-    Create a .env file in the root directory and add the required environment variables. Refer to .env.example for details.
+   Create a .env file in the root directory and add the required environment variables. Refer to .env.example for details.
+
 4. **Start the development server**:
    ```sh
    npm run dev
+   ```
 
 ## Usage
- 
-- **Link the bank account**: 
+
+- **Link the bank account**:
+
   - **Navigate to the Link Bank Account section.**
   - **Follow the instructions to link your bank account via Plaid.**
 
-- **Transfer Money**: 
+- **Transfer Money**:
+
   - **Go to the Transfer Money section.**
   - **Enter the details to transfer money using Dwolla.**
 
-- **Monitor Errors**: 
+- **Monitor Errors**:
   - **Errors are logged in real-time with Sentry.**
   - **Access the Sentry dashboard for detailed reports.**
 
-
 ## Contributing
-- **We welcome contributions! To contribute**: 
+
+- **We welcome contributions! To contribute**:
   1.  **Fork the repository.**
   2.  **Create a new branch**:
-       ```sh
-       git checkout -b feature/your-feature-name
+      ```sh
+      git checkout -b feature/your-feature-name
+      ```
   3.  **Commit your changes**:
-       ```sh
-       git commit -m "Add your message"
+      ```sh
+      git commit -m "Add your message"
+      ```
   4.  **Push your branch**:
       ```sh
       git push origin feature/your-feature-name
+      ```
   5.  **Submit a pull request**.
 
 ## License
+
 This project is licensed under the MIT License.
