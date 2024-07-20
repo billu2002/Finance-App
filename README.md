@@ -46,15 +46,14 @@ To set up the project locally:
    git clone https://github.com/yourusername/horizon-banking-app.git
    cd horizon-banking-app
 2. **Install dependencies**:
-  ```sh
-    npm install
+   ```sh
+   npm install
 3. **Set up environment variables**:
-  ```sh
+
     Create a .env file in the root directory and add the required environment variables. Refer to .env.example for details.
 4. **Start the development server**:
-  ```sh
-    npm run dev
-
+   ```sh
+   npm run dev
 
 ## Usage
  
@@ -69,18 +68,4 @@ To set up the project locally:
 - **Monitor Errors**: 
   - **Errors are logged in real-time with Sentry.**
   - **Access the Sentry dashboard for detailed reports.**
-
-## Contributing
-- ***We welcome contributions! To contribute*: 
-  - **Fork the repository.**
-  - **Create a new branch**: 
-  ```sh
-    git checkout -b feature/your-feature-name
-  - **Commit your changes**: 
-  ```sh
-    git commit -m "Add your message"
-  - **Push your branch**: 
-  ```sh
-    git push origin feature/your-feature-name
-  - **Submit a pull request.** 
 
