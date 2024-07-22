@@ -25,6 +25,15 @@ const TransactionHistory = async ({
   // console.log(account?.transactions);
   // console.log(account);
 
+  // Find the corresponding account balances
+  const accountBalances = accountsData.find(
+    (acc: any) => acc.appwriteItemId === appwriteItemId
+  );
+  const currentBalance = accountBalances?.currentBalance || 0;
+  const availableBalance = accountBalances?.availableBalance || 0;
+
+  console.log({ availableBalance, currentBalance });
+
   const rowsPerPage = 10;
   const totalPages = Math.ceil(account?.transactions.length / rowsPerPage);
 
@@ -59,7 +68,7 @@ const TransactionHistory = async ({
           <div className="transactions-account-balance">
             <p className="text-14">Current balance</p>
             <p className="text-24 text-center font-bold">
-              {formatAmount(account?.data.currentBalance)}
+              {formatAmount(currentBalance)}
             </p>
           </div>
         </div>
