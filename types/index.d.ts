@@ -90,6 +90,8 @@ declare type Bank = {
   fundingSourceUrl: string;
   userId: string;
   shareableId: string;
+  availableBalance: number;
+  currentBalance: number;
 };
 
 declare type AccountTypes =
@@ -211,7 +213,7 @@ declare interface TotlaBalanceBoxProps {
 
 declare interface FooterProps {
   user: User;
-  type?:'mobile' | 'desktop'
+  type?: "mobile" | "desktop";
 }
 
 declare interface RightSidebarProps {
@@ -315,6 +317,8 @@ declare interface createBankAccountProps {
   bankId: string;
   fundingSourceUrl: string;
   shareableId: string;
+  currentBalance: number;
+  availableBalance: number;
 }
 
 declare interface getBanksProps {
